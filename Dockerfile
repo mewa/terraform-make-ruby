@@ -1,5 +1,3 @@
-FROM hashicorp/terraform:light
+FROM mewa/terraform-make-ruby
 
-RUN apk add --no-cache make ruby
-
-ENTRYPOINT ["/bin/sh"]
+RUN apk add --no-cache jq
